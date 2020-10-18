@@ -106,7 +106,7 @@ master_cr %>%
            stat = "identity",
            size = .5,
            width = 0.75)+
-  theme(axis.text.x = element_text(angle = 90, hjust=1))+
+  theme(axis.text.x = element_text(angle = 0, hjust=1))+
   theme(panel.grid.minor.y = element_blank(),
         panel.grid.major.y = element_blank(),
         panel.grid.major.x = element_line(color = "grey50", linetype = "solid", size = 0.1),
@@ -150,7 +150,7 @@ master_lr %>%
            stat = "identity",
            size = 0.5,
            width = 0.75) +
-  theme(axis.text.x = element_text(angle = 60, hjust=1)) +
+  theme(axis.text.x = element_text(angle = 0, hjust=1)) +
   theme(panel.grid.minor.y = element_blank(),
         panel.grid.major.y = element_blank(),
         panel.grid.major.x = element_line(color = "grey50", linetype = "solid", size = 0.1),
