@@ -79,8 +79,9 @@ master_mb %>%
        y = NULL,
        title = "Bus Farebox Recovery Ratio",
        subtitle = paste0("Fraction of operating expenses which are met by the fares paid by passengers"),
-       caption = "Source Data: National Transit Database, 2018\n
-       Includes top 30 most trips")+
+       caption = "Directly Operated: Transportation service provided directly by a transit agency, using their employees to supply the necessary labor to operate the revenue vehicles.\n
+       Purchased Transportation: Transportation service provided to a public transit agency or governmental unit from a public or private transportation provider based on a written contract.\n
+       Source Data: National Transit Database, 2018\n")+
   scale_y_continuous(labels = scales::percent_format(accuracy = 1))+
   scale_fill_manual(values = c("#f9cfc5", "#ee6c4d"), 
                      labels = c("Directly Operated", "Purchased Transportation"),
@@ -121,7 +122,9 @@ master_cr %>%
        y = NULL,
        title = "Commuter Rail Farebox Recovery Ratio",
        subtitle = paste0("Fraction of operating expenses which are met by the fares paid by passengers"),
-       caption = "Source Data: National Transit Database, 2018")+
+       caption = "Directly Operated: Transportation service provided directly by a transit agency, using their employees to supply the necessary labor to operate the revenue vehicles.\n
+       Purchased Transportation: Transportation service provided to a public transit agency or governmental unit from a public or private transportation provider based on a written contract.\n
+       Source Data: National Transit Database, 2018\n")+
   scale_y_continuous(labels = scales::percent_format(accuracy = 1))+
   scale_fill_manual(values = c("#d7bec8", "#843b62"), 
                     labels = c("Directly Operated", "Purchased Transportation"),
@@ -162,7 +165,9 @@ master_lr %>%
        y = NULL,
        title = "Light Rail Farebox Recovery Ratio",
        subtitle = paste0("Fraction of operating expenses which are met by the fares paid by passengers"),
-       caption = "Source Data: National Transit Database, 2018")+
+       caption = "Directly Operated: Transportation service provided directly by a transit agency, using their employees to supply the necessary labor to operate the revenue vehicles.\n
+       Purchased Transportation: Transportation service provided to a public transit agency or governmental unit from a public or private transportation provider based on a written contract.\n
+       Source Data: National Transit Database, 2018\n")+
   scale_y_continuous(labels = scales::percent_format(accuracy = 1))+
   scale_fill_manual(values = c("#98b4d4", "#23395D"), 
                     labels = c("Directly Operated", "Purchased Transportation"),
