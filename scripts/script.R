@@ -86,6 +86,7 @@ master_mb %>%
   scale_fill_manual(values = c("#f9cfc5", "#ee6c4d"), 
                      labels = c("Directly Operated", "Purchased Transportation"),
                      name = "Type of Service")+
+  geom_hline(yintercept = 0, color = "#444444", size = 0.5)+
   coord_flip()
 
 ggsave("output_bus_bar.jpg", height = 8, width = 12, units = "in")
@@ -129,6 +130,7 @@ master_cr %>%
   scale_fill_manual(values = c("#d7bec8", "#843b62"), 
                     labels = c("Directly Operated", "Purchased Transportation"),
                     name = "Type of Service")+
+  geom_hline(yintercept = 0, color = "#444444", size = 0.5)+
   coord_flip()
 
 ggsave("output_cr_bar.jpg", height = 8, width = 12, units = "in")
@@ -172,6 +174,7 @@ master_lr %>%
   scale_fill_manual(values = c("#98b4d4", "#23395D"), 
                     labels = c("Directly Operated", "Purchased Transportation"),
                     name = "Type of Service")+
+  geom_hline(yintercept = 0, color = "#444444", size = 0.5)+
   coord_flip()
 
 ggsave("output_lr_bar.jpg", height = 8, width = 12, units = "in")
