@@ -107,9 +107,9 @@ master_cr %>%
            size = .5,
            width = 0.75)+
   theme(axis.text.x = element_text(angle = 90, hjust=1))+
-  theme(panel.grid.minor.x = element_blank(),
-        panel.grid.major.x = element_blank(),
-        panel.grid.major.y = element_line(color = "grey50", linetype = "solid", size = 0.1),
+  theme(panel.grid.minor.y = element_blank(),
+        panel.grid.major.y = element_blank(),
+        panel.grid.major.x = element_line(color = "grey50", linetype = "solid", size = 0.1),
         panel.background = element_blank(),
         text = element_text(family = "SourceSansPro-Light", color = "grey10", lineheight = 0.5),
         plot.title = element_text(family = "SourceSansPro-Regular", size = 20, hjust = 0),
@@ -151,9 +151,9 @@ master_lr %>%
            size = 0.5,
            width = 0.75) +
   theme(axis.text.x = element_text(angle = 60, hjust=1)) +
-  theme(panel.grid.minor.x = element_blank(),
-        panel.grid.major.x = element_blank(),
-        panel.grid.major.y = element_line(color = "grey50", linetype = "solid", size = 0.1),
+  theme(panel.grid.minor.y = element_blank(),
+        panel.grid.major.y = element_blank(),
+        panel.grid.major.x = element_line(color = "grey50", linetype = "solid", size = 0.1),
         panel.background = element_blank(),
         text = element_text(family = "SourceSansPro-Light", color = "grey10", lineheight = 0.5),
         plot.title = element_text(family = "SourceSansPro-Regular", size = 20, hjust = 0),
